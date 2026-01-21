@@ -2,48 +2,90 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moon Ateliê</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Moon Ateliê</h1>
-    <p>Bem-vindo ao Moon Ateliê, onde você pode encontrar tudo de crochê.</p>
 
-    <div>
-        <h2>Pesquise o produto que está procurando</h2>
-        <input type="text" placeholder="Pesquisar...">
-        <button>Buscar</button>
-    </div>
+    <header>
+        <img src="imagens/logo.jpg" alt="Logo Moon Ateliê" class="logo" width="200">
+        <h1>Moon Ateliê</h1>
+        <p>Bem-vindo ao Moon Ateliê, onde você pode encontrar tudo de crochê.</p>
+        
+        <nav>
+            <ul>
+                <li><a href="#search">Pesquisar</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div>
-        <h2>Produtos</h2>
-        <ul>
-            <li><a href="produtos/roupas.html">Roupas de Crochê</a></li>
-            <li><a href="produtos/acessorios.html">Acessórios de Crochê</a></li>
-            <li><a href="produtos/decoracao.html">Decoração de Crochê</a></li>
-            <li><a href="produtos/amigurumis.html">Amigurumis de Crochê</a></li>
-        </ul>
-    </div>
+    <main>
+        <section id="search">
+            <h2>Pesquise o produto que está procurando</h2>
+            <form action="produtos.html" method="get">
+                <input type="text" name="query" placeholder="Pesquisar...">
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
 
-    <div>
-        <h2>Sobre Nós</h2>
+        <section id="products">
+            <h2>Produtos</h2>
+            <ul>
+                <li>
+                    <a href="produtos/roupas.html">Roupas de Crochê</a>
+                    <img src="imagens/roupas.jpg" alt="Roupas de Crochê" width="100">
+                </li>
+
+                <li>
+                    <a href="produtos/acessorios.html">Acessórios de Crochê</a>
+                    <img src="imagens/acessorios.jpg" alt="Acessórios de Crochê" width="100">
+                </li>
+                <li>
+                    <a href="produtos/decoracao.html">Decoração de Crochê</a>
+                    <img src="imagens/decoracao.jpg" alt="Decoração de Crochê" width="100">
+                </li>
+                <li>
+                    <a href="produtos/amigurumis.html">Amigurumis de Crochê</a>
+                    <img src="imagens/amigurumis.jpg" alt="Amigurumis de Crochê" width="100">
+                </li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>Sobre Nós</h2>
+            <p>
+                O Moon Ateliê é um espaço dedicado à arte do crochê,
+                oferecendo produtos feitos à mão com carinho.
+            </p>
+            <p>Confira nossos produtos e faça sua encomenda agora mesmo!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>
+                <a href="mailto:moonateliecroche@gmail.com">
+                    Email: moonateliecroche@gmail.com
+                </a>
+            </p>
+            <p>
+                <a href="https://wa.me/5511991201187">
+                    WhatsApp: (11) 99120-1187
+                </a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Moon Ateliê</p>
         <p>
-            O Moon Ateliê é um espaço dedicado à arte do crochê,
-            oferecendo produtos feitos à mão com carinho.
+            <a href="mailto:moonateliecroche@gmail.com">Email</a> | 
+            <a href="https://wa.me/5511991201187">WhatsApp</a>
         </p>
+    </footer>
 
-        <h2>Contato</h2>
-        <p>
-            <a href="mailto:moonateliecroche@gmail.com">
-                Email: moonateliecroche@gmail.com
-            </a>
-        </p>
-        <p>
-            <a href="https://wa.me/5511991201187">
-                WhatsApp: (11) 99120-1187
-            </a>
-        </p>
-    </div>
 </body>
 </html>
