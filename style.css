@@ -110,3 +110,82 @@ nav {
     font-family: 'Quicksand', sans-serif;
     transition: background-color 0.3s ease;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    #pesquisa {
+        position: static;   /* volta ao normal */
+        margin-top: 20px;
+        text-align: center;
+    }
+}
