@@ -23,7 +23,7 @@ p {
 }
 
 header {
-    direction: relative;
+    position: relative;
     background-color: #FFF1E6;
     padding: 40px;
     display: flex;
@@ -91,9 +91,13 @@ nav {
 
 #pesquisa h2 {
     display: none;
+
 }
 
 #pesquisa input {
+    flex: 1;
+    min-width: 140px;
+    gap: 8px;
     padding: 8px 12px;
     border-radius: 8px;
     border: 1px solid #D7CCC8;
