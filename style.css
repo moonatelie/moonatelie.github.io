@@ -23,6 +23,7 @@ p {
 }
 
 header {
+    direction: relative;
     background-color: #FFF1E6;
     padding: 40px;
     display: flex;
@@ -80,4 +81,32 @@ nav a:hover {
 
 nav {
     margin-top: 15px;
+}
+
+#pesquisa {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+#pesquisa h2 {
+    display: none;
+}
+
+#pesquisa input {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #D7CCC8;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#pesquisa button {
+    padding: 8px 14px;
+    border: none;
+    background-color: #6D4C41;
+    color: #FFF;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    transition: background-color 0.3s ease;
 }
