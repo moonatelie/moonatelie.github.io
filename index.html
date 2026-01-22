@@ -32,7 +32,12 @@
         <div id="pesquisa">
             <h2>Pesquise o produto que está procurando</h2>
             <form action="produtos.html" method="get">
-                <input type="text" name="query" placeholder="Pesquisar...">
+                <input type="text" name="query" placeholder="Pesquisar..." list="opcoes-produtos">
+                <datalist id="opcoes-produtos">
+                    <option value="Roupas de Crochê">
+                    <option value="Acessórios de Crochê">
+                    <option value="Decoração de Crochê">
+                    <option value="Amigurumis de Crochê">
                 <button type="submit">Buscar</button>
             </form>
         </div>
