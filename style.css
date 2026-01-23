@@ -44,11 +44,16 @@ header .top{
 }
 
 header .logo {
-    width: 160px;
-    border-radius: 10px;
+    width: 200px;
+    height: auto;
+    display: block; 
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
+
 }
 
 header h1 {
+    color: #5a2d1f;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
     font-size: 2rem;
     margin-bottom: 8px;
 }
@@ -115,8 +120,80 @@ nav {
     transition: background-color 0.3s ease;
 }
 
+#produtos img{
+    width: 280px;
+    border-radius: 12px;
+    height: auto;
+    display: block; 
+    margin-top: 10px;  
+    filter: brightness(0.75); 
+    transition: filter 0.3s ease;
+}
 
+#produtos img:hover{
+    filter: brightness(1);
+}
 
+#produtos ul{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#produtos h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0 20px 0;
+    color: #5a2d1f;
+    position: relative;
+}
+
+#produtos h2::after{
+    content: " ";
+    width: 60px;
+    height: 3px;
+    background-color: #A1887F;
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+#produtos h3{
+    margin-top: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.produto{
+    margin: 10px;
+    position: relative;
+    list-style: none;
+}
+
+.produto a{
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+
+.nome-produto{
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 0.5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(244, 250, 201);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    transition: filter 0.3s ease;
+}
+.nome-produto:hover{
+    filter: brightness(0.8);
+}
 
 
 
