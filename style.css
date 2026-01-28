@@ -102,11 +102,15 @@ nav {
 #pesquisa input {
     flex: 1;
     min-width: 140px;
-    gap: 8px;
     padding: 8px 12px;
     border-radius: 8px;
     border: 1px solid #D7CCC8;
     font-family: 'Quicksand', sans-serif;
+}
+
+#pesquisa form {
+    display: flex;
+    gap: 8px;
 }
 
 #pesquisa button {
@@ -191,19 +195,73 @@ nav {
     font-size: 1.5rem;
     transition: filter 0.3s ease;
 }
+
 .nome-produto:hover{
     filter: brightness(0.8);
 }
 
+#sobre h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0 20px 0;
+    color: #5a2d1f;
+    position: relative;
+}
 
+#sobre h2::after{
+    content: " ";
+    width: 60px;
+    height: 4px;
+    background-color: #A1887F;
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
 
+#sobre p{
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    text-align: center;
+}
 
+#contato h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0 20px 0;
+    color: #5a2d1f;
+    position: relative;
+}
 
+#contato h2::after{
+    content: " ";
+    width: 60px;
+    height: 4px;
+    background-color: #A1887F;
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
 
+#contato p{
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    text-align: center;
+}
 
-
-
-
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFF1E6;
+    color: #6D4C41;
+    margin-top: 40px;
+    border-radius: 16px;
+}
 
 
 
