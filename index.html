@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <meta name="google-site-verification" content="N_L1QyYZXxTa1oC2qNgeC4VscN9pTYPtA__wQ8YcdCk" />
 </head>
+
 <body>
 
     <header>
@@ -24,8 +25,10 @@
             <ul>
                 <li><a href="#pesquisa">Pesquisar</a></li>
                 <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#about">Sobre Nós</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#pedido">Pedido</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            
             </ul>
         </nav>
 
@@ -34,11 +37,15 @@
             <form action="produtos.html" method="get">
                 <input type="text" name="query" placeholder="Pesquisar..." list="opcoes-produtos">
                 <datalist id="opcoes-produtos">
-                    <option value="Roupas de Crochê">
-                    <option value="Acessórios de Crochê">
-                    <option value="Decoração de Crochê">
-                    <option value="Amigurumis de Crochê">
+                    <option value="Roupas">
+                    <option value="Acessórios">
+                    <option value="Decoração">
+                    <option value="Amigurumis">
                 </datalist>
+                <p id="'nenhum"
+                    style="display:none; color:red; text-align:center; margin-top:20px;">
+                    Nenhum produto encontrado.
+                </p>
                 <button type="submit">Buscar</button>
             </form>
         </div>
@@ -52,34 +59,40 @@
             <h2>Produtos</h2>
             <ul>
                 <li class="produto">
-                    <a href="produtos/roupas.html">
                         <img src="imagens/roupas.jpg" alt="Roupas">
                         <h3 class="nome-produto" >Roupas</h3>
 
                     </a>
                 </li>
                 <li class="produto">
-                    <a href="produtos/acessorios.html">
                         <img src="imagens/acessorios.jpg" alt="Acessórios">
                         <h3 class="nome-produto" >Acessórios</h3>
                     </a>
                 </li>
 
                 <li class="produto">
-                    <a href="produtos/decoracao.html">
                         <img src="imagens/decoracao.jpg" alt="Decoração">
                         <h3 class="nome-produto" >Decoração</h3>
                     </a>
                 </li>
 
                 <li class="produto">
-                    <a href="produtos/amigurumis.html">
                         <img src="imagens/amigurumis.jpg" alt="Amigurumis">
                         <h3 class="nome-produto" >Amigurumis</h3>
                     </a>
                 </li>
 
             </ul>
+        </section>
+
+        <section id="pedido">
+            <h2>Faça seu pedido</h2>
+            <p>Entre em contato conosco para fazer seu pedido personalizado!</p>
+            <a href="https://wa.me/5511991201187?text=Olá,%20vim%20pelo%20site%20e%20quero%20fazer%20um%20pedido"
+               class="botao">
+               Falar no WhatsApp
+            </a>
+
         </section>
 
         <section id="sobre">
@@ -102,6 +115,11 @@
                     WhatsApp: (11) 99120-1187
                 </a>
             </p>
+            <p>
+                <a href="https://www.instagram.com/moonateliecroche/">
+                    Instagram: @moonateliecroche
+                </a>
+            </p>
         </section>
     </main>
 
@@ -109,9 +127,11 @@
         <p>&copy; 2026 Moon Ateliê</p>
         <p>
             <a href="mailto:moonateliecroche@gmail.com">Email</a> | 
-            <a href="https://wa.me/5511991201187">WhatsApp</a>
+            <a href="https://wa.me/5511991201187">WhatsApp</a> |
+            <a href="https://www.instagram.com/moonateliecroche/">Instagram</a>
         </p>
     </footer>
 
+    <script src="script.js" defer></script>
 </body>
 </html>
